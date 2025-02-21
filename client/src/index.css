@@ -1,0 +1,2095 @@
+/* ✅ ضبط الخطوط والتنسيقات العامة */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+/* ✅ تحسين شكل العنوان */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* ✅ تنسيق البحث */
+.search-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.search-container input {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* ✅ تصميم نموذج الإضافة */
+.form-container {
+  width: 50%;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input,
+.form-container select,
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container button {
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #218838;
+}
+
+/* ✅ تصميم قائمة الوجبات */
+.meals-container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.meals-category {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.meal-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.meal-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.meal-item div {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.meal-item button {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #e0a800;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+/* ✅ تنسيق الهيدر */
+.menu-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.menu-header button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu-header button:hover {
+  background: #0056b3;
+}
+
+/* ✅ تنسيق الهيدر */
+.menu-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.menu-header button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.menu-header button:hover {
+  background: #0056b3;
+}
+
+/* ✅ تمييز الفئة النشطة في الهيدر */
+.menu-header .active-category {
+  background: #ff6600;
+}
+
+/* ✅ جعل اسم الصنف ثابتًا أثناء التمرير */
+.sticky-category {
+  position: sticky;
+  top: 50px;
+  background: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 900;
+}
+
+/* ✅ تحسين تنسيق الأصناف */
+.meals-category {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ✅ تنسيق الوجبات */
+.meal-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.meal-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.meal-item div {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+/* ✅ تنسيق الهيدر */
+.menu-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.menu-header button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.menu-header button:hover {
+  background: #0056b3;
+}
+
+/* ✅ جعل اسم الصنف مثبتًا أثناء التمرير */
+.sticky-category {
+  position: sticky;
+  top: 50px;
+  background: white;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 900;
+}
+
+/* ✅ تحسين تنسيق الأصناف */
+.meals-category {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ✅ تنسيق أقسام الأصناف */
+.category-section {
+  margin-bottom: 40px;
+}
+
+/* ✅ تنسيق الوجبات */
+.meal-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.meal-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.meal-item div {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+/* ✅ تنسيق الهيدر */
+.menu-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.menu-header button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.menu-header button:hover {
+  background: #0056b3;
+}
+
+/* ✅ جعل اسم الصنف يبقى في مكانه الأصلي أثناء التمرير */
+.fixed-category-title {
+  position: relative;
+  background: white;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+  width: 100%;
+}
+
+/* ✅ تحسين تنسيق الأقسام */
+.category-section {
+  margin-bottom: 40px;
+}
+
+/* ✅ تنسيق الوجبات */
+.meal-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.meal-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.meal-item div {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+/* ✅ تنسيق الهيدر */
+.menu-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* ✅ جعل اسم الصنف ثابتًا عند التمرير ولكن لا يتحرك لأعلى أكثر من مكانه الأصلي */
+.fixed-category-title {
+  position: sticky;
+  top: 60px; /* ✅ تأكد من أن العنوان لا يصعد أكثر من موقعه الأصلي */
+  background: white;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+  width: 100%;
+  z-index: 900;
+}
+
+/* ✅ تحسين تنسيق الأقسام */
+.category-section {
+  margin-bottom: 40px;
+}
+
+/* ✅ تنسيق الوجبات */
+.meal-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.meal-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.meal-item div {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+/* ✅ تحسين تصميم نموذج إضافة الوجبات */
+.form-container {
+  width: 50%;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ تحسين شكل الحقول */
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* ✅ تحسين شكل زر اختيار الملف */
+.form-container input[type="file"] {
+  padding: 8px;
+  border: none;
+  background: #f8f9fa;
+}
+
+/* ✅ تحسين زر الإضافة */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.form-container button:hover {
+  background-color: #218838;
+}
+
+/* ✅ تحسين تصميم الزر عند تعطيله */
+.form-container button:disabled {
+  background-color: #94d3a2;
+  cursor: not-allowed;
+}
+/* ✅ تحسين تصميم نموذج إضافة الوجبات */
+.form-container {
+  width: 50%;
+  max-width: 500px; /* ✅ تحديد الحد الأقصى للعرض لمنع الامتداد الزائد */
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* ✅ يجعل الحاوية تحتفظ بالحدود بدون أن تؤثر على الحجم الكلي */
+}
+
+/* ✅ تحسين شكل الحقول وضبطها داخل الكونتينر */
+.form-container input,
+.form-container select {
+  width: 100%; /* ✅ يضمن أن الحقل لا يخرج عن حدود الكونتينر */
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box; /* ✅ يضمن أن الـ padding لا يوسع الحقول خارج الكونتينر */
+}
+
+.form-container input:focus,
+.form-container select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* ✅ تحسين شكل زر اختيار الملف */
+.form-container input[type="file"] {
+  padding: 8px;
+  border: none;
+  background: #f8f9fa;
+  width: 100%; /* ✅ منع خروج زر اختيار الملف خارج الكونتينر */
+}
+
+/* ✅ تحسين زر الإضافة */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.form-container button:hover {
+  background-color: #218838;
+}
+
+/* ✅ تحسين تصميم الزر عند تعطيله */
+.form-container button:disabled {
+  background-color: #94d3a2;
+  cursor: not-allowed;
+}
+/* ✅ تنسيق حاوية الوجبات */
+.meals-container {
+  width: 80%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* ✅ ترتيب البطاقات تلقائيًا */
+  gap: 20px; /* ✅ إضافة مسافة بين البطاقات */
+}
+
+/* ✅ تنسيق بطاقة الوجبة */
+.meal-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-bottom: 10px; /* ✅ تأكيد المسافة أسفل البطاقة */
+}
+
+/* ✅ تحسين شكل الصورة */
+.meal-item img {
+  width: 100%;
+  height: 180px; /* ✅ تحديد ارتفاع ثابت للصورة */
+  object-fit: cover; /* ✅ ضمان ملء الصورة دون تشويه */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* ✅ تنسيق معلومات الوجبة */
+.meal-item p {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.meal-item strong {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+/* ✅ تنسيق حاوية الوجبات */
+.meals-container {
+  width: 80%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* ✅ ترتيب البطاقات تلقائيًا */
+  gap: 20px; /* ✅ إضافة مسافة بين البطاقات */
+}
+
+/* ✅ تصميم بطاقة الوجبة */
+.meal-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* ✅ يجعل الصورة في الأعلى والنص في الأسفل */
+  height: 300px; /* ✅ تحديد ارتفاع موحد */
+}
+
+/* ✅ تحسين شكل الصورة وجعلها تأخذ 70% من البطاقة */
+.meal-item img {
+  width: 100%;
+  height: 70%; /* ✅ الصورة تأخذ 70% من البطاقة */
+  object-fit: cover; /* ✅ ضمان ملء الصورة دون تشويه */
+}
+
+/* ✅ تنسيق معلومات الوجبة */
+.meal-info {
+  height: 30%; /* ✅ المساحة المتبقية 30% للبيانات */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #f8f9fa;
+}
+
+/* ✅ تحسين النصوص */
+.meal-info strong {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.meal-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+/* ✅ تنسيق حاوية الوجبات */
+.meals-container {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* ✅ توزيع البطاقات بناءً على الحجم */
+  gap: 20px; /* ✅ مسافة بين البطاقات */
+}
+
+/* ✅ تصميم بطاقة الوجبة */
+.meal-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 300px; /* ✅ ارتفاع موحد للبطاقة */
+}
+
+/* ✅ تحسين شكل الصورة وجعلها تأخذ 70% من البطاقة */
+.meal-item img {
+  width: 100%;
+  height: 70%; /* ✅ الصورة تأخذ 70% من البطاقة */
+  object-fit: cover; /* ✅ ضمان ملء الصورة دون تشويه */
+}
+
+/* ✅ تنسيق معلومات الوجبة */
+.meal-info {
+  height: 30%; /* ✅ المساحة المتبقية 30% للبيانات */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #f8f9fa;
+}
+
+/* ✅ تحسين النصوص */
+.meal-info strong {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.meal-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* ✅ تحسين التصميم للتابلت (iPad) */
+@media (max-width: 1024px) {
+  .meals-container {
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); /* ✅ عرض عمودين في التابلت */
+  }
+
+  .meal-item {
+    height: 280px; /* ✅ تقليل ارتفاع البطاقة قليلاً */
+  }
+
+  .meal-info strong {
+    font-size: 16px; /* ✅ تصغير النص قليلاً */
+  }
+
+  .meal-info p {
+    font-size: 14px;
+  }
+}
+
+/* ✅ تحسين التصميم للهاتف المحمول */
+@media (max-width: 600px) {
+  .meals-container {
+    grid-template-columns: repeat(1, minmax(200px, 1fr)); /* ✅ عرض عمود واحد في الهاتف */
+  }
+
+  .meal-item {
+    height: 260px; /* ✅ تقليل الارتفاع ليكون أكثر تناسبًا مع الشاشات الصغيرة */
+  }
+
+  .meal-info strong {
+    font-size: 14px;
+  }
+
+  .meal-info p {
+    font-size: 12px;
+  }
+}
+/* ✅ جعل الأصناف تظهر تحت بعضها */
+.meals-container {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column; /* ✅ ترتيب الأصناف عموديًا */
+  gap: 30px; /* ✅ مسافة بين كل قائمة */
+}
+
+/* ✅ تنسيق العناوين */
+.meals-category {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* ✅ ترتيب البطاقات داخل كل قائمة أصناف */
+.meals-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* ✅ ترتيب البطاقات تلقائيًا */
+  gap: 20px; /* ✅ مسافة بين البطاقات */
+}
+
+/* ✅ تصميم بطاقة الوجبة */
+.meal-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 300px; /* ✅ ارتفاع موحد للبطاقة */
+}
+
+/* ✅ تحسين شكل الصورة وجعلها تأخذ 70% من البطاقة */
+.meal-item img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+/* ✅ تنسيق معلومات الوجبة */
+.meal-info {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #f8f9fa;
+}
+
+/* ✅ تحسين النصوص */
+.meal-info strong {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.meal-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* ✅ تحسين الترتيب للتابلت */
+@media (max-width: 1024px) {
+  .meals-list {
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); /* ✅ عمودين للوجبات على التابلت */
+  }
+}
+
+/* ✅ تحسين الترتيب للهاتف */
+@media (max-width: 600px) {
+  .meals-list {
+    grid-template-columns: repeat(1, minmax(200px, 1fr)); /* ✅ عمود واحد على الهاتف */
+  }
+}
+/* ✅ ضبط حاوية الوجبات */
+.meals-container {
+  width: 80%;
+  max-width: 1000px; /* ✅ تحديد حد أقصى لعرض الكونتينر للحفاظ على الحجم */
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column; /* ✅ ترتيب الأصناف عموديًا */
+  gap: 30px;
+}
+
+/* ✅ تنسيق العناوين */
+.meals-category {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* ✅ ترتيب الوجبات داخل كل صنف */
+.meals-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ✅ 3 وجبات في السطر افتراضيًا */
+  gap: 20px;
+  justify-content: center;
+}
+
+/* ✅ تصميم بطاقة الوجبة */
+.meal-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* ✅ يجعل جميع الوجبات بنفس الحجم */
+  max-width: 300px; /* ✅ ضبط الحجم الأقصى لكل بطاقة */
+  height: 300px;
+  margin: auto; /* ✅ يجعل الوجبات متناسقة وسط الصف */
+}
+
+/* ✅ تحسين شكل الصورة */
+.meal-item img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+/* ✅ تنسيق معلومات الوجبة */
+.meal-info {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #f8f9fa;
+}
+
+/* ✅ تحسين النصوص */
+.meal-info strong {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.meal-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* ✅ تحسين الترتيب للتابلت (iPad) */
+@media (max-width: 1024px) {
+  .meals-list {
+    grid-template-columns: repeat(2, 1fr); /* ✅ عمودين في التابلت */
+  }
+
+  .meal-item {
+    height: 280px;
+  }
+
+  .meal-info strong {
+    font-size: 16px;
+  }
+
+  .meal-info p {
+    font-size: 14px;
+  }
+}
+
+/* ✅ تحسين الترتيب للهاتف */
+@media (max-width: 600px) {
+  .meals-list {
+    grid-template-columns: repeat(1, 1fr); /* ✅ وجبة واحدة في السطر على الهاتف */
+  }
+
+  .meal-item {
+    height: 260px;
+  }
+
+  .meal-info strong {
+    font-size: 14px;
+  }
+
+  .meal-info p {
+    font-size: 12px;
+  }
+}
+/* ✅ تنسيق الهيدر */
+.menu-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow-x: auto; /* ✅ يسمح بالتمرير في الأجهزة الصغيرة */
+  white-space: nowrap;
+}
+
+/* ✅ تحسين شكل أزرار الهيدر */
+.menu-header button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+  flex-shrink: 0; /* ✅ يمنع الضغط على الأزرار عند التمرير */
+}
+
+.menu-header button:hover {
+  background: #0056b3;
+}
+
+/* ✅ تحديد الصنف النشط */
+.menu-header .active-category {
+  background: #ff6600;
+}
+
+/* ✅ جعل اسم الصنف مثبتًا أثناء التمرير */
+.sticky-category {
+  position: sticky;
+  top: 50px;
+  background: white;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 900;
+}
+
+/* ✅ ترتيب الأصناف تحت بعضها */
+.meals-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* ✅ ترتيب الوجبات داخل كل صنف */
+.meals-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+/* ✅ تصميم بطاقة الوجبة */
+.meal-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+/* ✅ تحسين شكل الصورة */
+.meal-item img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+/* ✅ تنسيق معلومات الوجبة */
+.meal-info {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #f8f9fa;
+}
+
+/* ✅ تحسين النصوص */
+.meal-info strong {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.meal-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* ✅ تحسين التصميم للتابلت */
+@media (max-width: 1024px) {
+  .meals-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .meal-item {
+    height: 280px;
+  }
+}
+
+/* ✅ تحسين التصميم للهاتف المحمول */
+@media (max-width: 600px) {
+  .meals-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .meal-item {
+    height: 260px;
+  }
+}
+/* ✅ ضبط الهيدر */
+.menu-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow-x: auto; /* ✅ يسمح بالتمرير في الأجهزة الصغيرة */
+  white-space: nowrap;
+}
+
+/* ✅ تحسين شكل أزرار الهيدر */
+.menu-header button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+  flex-shrink: 0;
+}
+
+.menu-header button:hover {
+  background: #0056b3;
+}
+
+/* ✅ عند التمرير إلى اسم الصنف، لن يختفي تحت الهيدر */
+.meals-category {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 60px; /* ✅ وضع الاسم تحت الهيدر */
+  z-index: 900;
+  scroll-margin-top: 70px; /* ✅ عند التنقل إليه، يظهر بوضوح تحت الهيدر */
+}
+
+/* ✅ ترتيب الأصناف تحت بعضها */
+.meals-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* ✅ ترتيب الوجبات داخل كل صنف */
+.meals-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+/* ✅ تصميم بطاقة الوجبة */
+.meal-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+/* ✅ تحسين شكل الصورة */
+.meal-item img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+/* ✅ تنسيق معلومات الوجبة */
+.meal-info {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: none; /* ✅ إزالة الخلفية */
+
+}
+
+/* ✅ تحسين النصوص */
+.meal-info strong {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  background: none; /* ✅ إزالة الخلفية */
+
+}
+
+.meal-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+  background: none; /* ✅ إزالة الخلفية */
+
+}
+
+/* ✅ تحسين التصميم للتابلت */
+@media (max-width: 1024px) {
+  .meals-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .meal-item {
+    height: 280px;
+  }
+}
+
+/* ✅ تحسين التصميم للهاتف المحمول */
+@media (max-width: 600px) {
+  .meals-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .meal-item {
+    height: 260px;
+  }
+}
+/* ✅ جعل الأصناف تظهر بجانب بعضها في واجهة التحكم */
+.admin-categories-container {
+  display: flex;
+  flex-wrap: wrap; /* ✅ السماح بانتقال الأصناف إلى سطر جديد عند الحاجة */
+  gap: 15px; /* ✅ مسافة بين الأصناف */
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* ✅ تصميم زر كل صنف */
+.admin-category-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+.admin-category-btn:hover {
+  background: #0056b3;
+}
+
+/* ✅ عند تحديد صنف معين */
+.admin-category-btn.active {
+  background: #ff6600;
+}
+
+/* ✅ تحسين تصميم الوجبات في واجهة التحكم */
+.admin-meals-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* ✅ تصميم بطاقة الوجبة */
+.admin-meal-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 250px;
+  height: 280px;
+  margin: auto;
+}
+
+/* ✅ تحسين شكل الصورة */
+.admin-meal-item img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+/* ✅ تنسيق معلومات الوجبة */
+.admin-meal-info {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #f8f9fa;
+}
+
+/* ✅ تحسين النصوص */
+.admin-meal-info strong {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.admin-meal-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+/* ✅ ترتيب الوجبات داخل كل صنف في واجهة التحكم */
+.admin-meals-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ✅ 3 وجبات في السطر على الكمبيوتر */
+  gap: 20px;
+  justify-content: center;
+}
+
+/* ✅ تصميم بطاقة الوجبة */
+.admin-meal-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+/* ✅ تحسين شكل الصورة */
+.admin-meal-item img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+/* ✅ تنسيق معلومات الوجبة */
+.admin-meal-info {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #f8f9fa;
+}
+
+/* ✅ تحسين النصوص */
+.admin-meal-info strong {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.admin-meal-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* ✅ تحسين التصميم للتابلت (iPad) */
+@media (max-width: 1024px) {
+  .admin-meals-container {
+    grid-template-columns: repeat(2, 1fr); /* ✅ وجبتان في السطر على التابلت */
+  }
+}
+
+/* ✅ تحسين التصميم للهاتف المحمول (وجبة واحدة في كل سطر) */
+@media (max-width: 600px) {
+  .admin-meals-container {
+    display: flex;
+    flex-direction: column; /* ✅ ترتيب الوجبات فوق بعضها */
+    align-items: center;
+  }
+
+  .admin-meal-item {
+    width: 90%; /* ✅ يجعل البطاقة تأخذ معظم عرض الشاشة */
+    max-width: 400px;
+    height: 320px;
+  }
+}
+/* ✅ إضافة زرّي التعديل والحذف */
+.admin-meal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: black;
+}
+
+.edit-btn:hover {
+  background: #e0a800;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+/* ✅ ترتيب الأزرار وإضافة مسافة بينها */
+.admin-meal-actions {
+  display: flex;
+  flex-direction: column; /* ✅ ترتيب الأزرار فوق بعضها */
+  gap: 10px; /* ✅ إضافة مسافة بين الأزرار */
+  align-items: center; /* ✅ محاذاة الأزرار في المنتصف */
+}
+
+/* ✅ تحسين الأزرار */
+.edit-btn, .delete-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  width: 80px; /* ✅ جعل الأزرار بنفس الحجم */
+  text-align: center;
+}
+
+/* ✅ زر التعديل */
+.edit-btn {
+  background: #ffc107;
+  color: black;
+}
+
+.edit-btn:hover {
+  background: #e0a800;
+}
+
+/* ✅ زر الحذف */
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+/* ✅ ترتيب الوجبات داخل واجهة التحكم */
+.admin-meals-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ✅ 3 وجبات في السطر على الكمبيوتر */
+  gap: 20px;
+  justify-content: center;
+}
+
+/* ✅ تصميم بطاقة الوجبة */
+.admin-meal-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row; /* ✅ ترتيب المحتوى أفقيًا */
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 350px;
+  height: 120px; /* ✅ تحسين ارتفاع البطاقة */
+  padding: 10px;
+  margin: auto;
+}
+
+/* ✅ ترتيب القسم الأيمن (الصورة + الاسم + السعر) */
+.admin-meal-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* ✅ محاذاة الاسم والسعر للصورة */
+  text-align: left;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+/* ✅ تحسين شكل الصورة */
+.admin-meal-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* ✅ ترتيب الأزرار عموديًا على اليسار */
+.admin-meal-actions {
+  display: flex;
+  flex-direction: column; /* ✅ ترتيب الأزرار فوق بعضها */
+  gap: 10px; /* ✅ إضافة مسافة بين الأزرار */
+  align-items: center; /* ✅ محاذاة الأزرار في المنتصف */
+}
+
+/* ✅ تحسين الأزرار */
+.edit-btn, .delete-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  width: 80px; /* ✅ جعل الأزرار بنفس الحجم */
+  text-align: center;
+}
+
+/* ✅ زر التعديل */
+.edit-btn {
+  background: #ffc107;
+  color: black;
+}
+
+.edit-btn:hover {
+  background: #e0a800;
+}
+
+/* ✅ زر الحذف */
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+/* ✅ تحسين التصميم للتابلت */
+@media (max-width: 1024px) {
+  .admin-meals-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ✅ تحسين التصميم للهاتف المحمول (وجبة واحدة في كل سطر) */
+@media (max-width: 600px) {
+  .admin-meals-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .admin-meal-item {
+    width: 90%;
+    max-width: 400px;
+    height: 120px;
+  }
+}
+/* ✅ ترتيب البطاقة في واجهة التحكم فقط */
+.admin-meal-item {
+  display: flex;
+  flex-direction: row; /* ✅ ترتيب العناصر أفقياً */
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 100%;
+  max-width: 400px;
+  height: 120px;
+  margin: auto;
+}
+
+/* ✅ تحسين شكل الصورة */
+.admin-meal-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px; /* ✅ مسافة بين الصورة والنص */
+}
+
+/* ✅ ترتيب الاسم والسعر على اليمين */
+.admin-meal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+/* ✅ ترتيب الأزرار على اليسار */
+.admin-meal-actions {
+  display: flex;
+  flex-direction: column; /* ✅ ترتيب الأزرار فوق بعضها */
+  gap: 5px; /* ✅ مسافة بين الأزرار */
+  align-items: center;
+}
+
+/* ✅ تحسين الأزرار */
+.admin-edit-btn, .admin-delete-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  width: 80px;
+  text-align: center;
+}
+
+.admin-edit-btn {
+  background: #ffc107;
+  color: black;
+}
+
+.admin-edit-btn:hover {
+  background: #e0a800;
+}
+
+.admin-delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.admin-delete-btn:hover {
+  background: #c82333;
+}
+/* ✅ ترتيب البطاقة في واجهة التحكم فقط */
+.admin-meal-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 100%;
+  max-width: 450px; /* ✅ تحسين عرض البطاقة */
+  height: 130px; /* ✅ تحسين الارتفاع */
+  margin: 10px auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.admin-meal-item:hover {
+  transform: scale(1.02); /* ✅ تأثير عند التمرير */
+}
+
+/* ✅ تحسين شكل الصورة */
+.admin-meal-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+/* ✅ ترتيب الاسم والسعر على اليمين */
+.admin-meal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.admin-meal-info strong {
+  font-size: 18px;
+  color: #333;
+}
+
+.admin-meal-info p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* ✅ ترتيب الأزرار على اليسار */
+.admin-meal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* ✅ مسافة متساوية بين الأزرار */
+  align-items: center;
+}
+
+/* ✅ تحسين الأزرار */
+.admin-edit-btn, .admin-delete-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  width: 85px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-edit-btn {
+  background: #ffc107;
+  color: black;
+}
+
+.admin-edit-btn:hover {
+  background: #e0a800;
+}
+
+.admin-delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.admin-delete-btn:hover {
+  background: #c82333;
+}
+
+/* ✅ تحسين التصميم للتابلت */
+@media (max-width: 1024px) {
+  .admin-meal-item {
+    max-width: 400px;
+  }
+}
+
+/* ✅ تحسين التصميم للهاتف المحمول */
+@media (max-width: 600px) {
+  .admin-meal-item {
+    max-width: 350px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .admin-meal-item img {
+    margin-bottom: 10px;
+  }
+
+  .admin-meal-actions {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+/* ✅ تحسين تصميم البطاقة */
+.admin-meal-item {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  width: 100%;
+  max-width: 480px; /* ✅ زيادة عرض البطاقة */
+  height: 140px; /* ✅ تحسين التناسق */
+  margin: 15px auto;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.admin-meal-item:hover {
+  transform: translateY(-3px); /* ✅ تأثير عند تمرير الفأرة */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ تحسين شكل الصورة */
+.admin-meal-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+/* ✅ ترتيب الاسم والسعر */
+.admin-meal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.admin-meal-info strong {
+  font-size: 18px;
+  color: #333;
+}
+
+.admin-meal-info p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* ✅ تحسين ترتيب الأزرار */
+.admin-meal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+/* ✅ تحسين أزرار التعديل والحذف */
+.admin-edit-btn, .admin-delete-btn {
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  width: 90px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-edit-btn {
+  background: #ffc107;
+  color: black;
+}
+
+.admin-edit-btn:hover {
+  background: #e0a800;
+}
+
+.admin-delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.admin-delete-btn:hover {
+  background: #c82333;
+}
+
+/* ✅ تحسين التصميم للتابلت */
+@media (max-width: 1024px) {
+  .admin-meal-item {
+    max-width: 420px;
+  }
+}
+
+/* ✅ تحسين التصميم للهاتف المحمول */
+@media (max-width: 600px) {
+  .admin-meal-item {
+    max-width: 360px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .admin-meal-item img {
+    margin-bottom: 10px;
+  }
+
+  .admin-meal-actions {
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 10px;
+  }
+}
+/* ✅ تحسين تصميم البطاقة */
+.admin-meal-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  width: 100%;
+  max-width: 300px; /* ✅ حجم مناسب للبطاقة */
+  height: 280px; /* ✅ حجم مناسب للبطاقة */
+  margin: 15px auto;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.admin-meal-item:hover {
+  transform: translateY(-3px); /* ✅ تأثير عند تمرير الفأرة */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ تحسين شكل الصورة */
+.admin-meal-item img {
+  width: 100%;
+  height: 70%; /* ✅ تأخذ 70% من البطاقة */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ✅ ترتيب الاسم والسعر في الأسفل على اليمين */
+.admin-meal-info {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  text-align: right;
+}
+
+.admin-meal-info strong {
+  font-size: 18px;
+  color: #333;
+}
+
+.admin-meal-info p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* ✅ ترتيب الأزرار على اليسار أسفل الصورة */
+.admin-meal-actions {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* ✅ تحسين أزرار التعديل والحذف */
+.admin-edit-btn, .admin-delete-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  width: 80px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-edit-btn {
+  background: #ffc107;
+  color: black;
+}
+
+.admin-edit-btn:hover {
+  background: #e0a800;
+}
+
+.admin-delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.admin-delete-btn:hover {
+  background: #c82333;
+}
+
+/* ✅ تحسين التصميم للهاتف المحمول */
+@media (max-width: 600px) {
+  .admin-meal-item {
+    max-width: 250px;
+    height: 260px;
+  }
+
+  .admin-meal-actions {
+    left: 5px;
+  }
+}
+/* ✅ تحسين تصميم البطاقة */
+.admin-meal-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  width: 100%;
+  max-width: 300px; /* ✅ حجم مناسب للبطاقة */
+  height: 280px; /* ✅ حجم مناسب للبطاقة */
+  margin: 15px auto;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.admin-meal-item:hover {
+  transform: translateY(-3px); /* ✅ تأثير عند تمرير الفأرة */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ تحسين شكل الصورة */
+.admin-meal-item img {
+  width: 100%;
+  height: 70%; /* ✅ تأخذ 70% من البطاقة */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ✅ تحسين تنسيق الاسم والسعر وإزالة الخلفية */
+.admin-meal-info {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  text-align: right;
+  background: none; /* ✅ إزالة الخلفية */
+
+}
+
+.admin-meal-info strong {
+  font-size: 18px;
+  color: #333;
+  background: none; /* ✅ إزالة الخلفية */
+  padding: 0;
+}
+
+.admin-meal-info p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 4px;
+  background: none; /* ✅ إزالة الخلفية */
+  padding: 0;
+}
+
+/* ✅ ترتيب الأزرار على اليسار أسفل الصورة */
+.admin-meal-actions {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* ✅ تحسين أزرار التعديل والحذف */
+.admin-edit-btn, .admin-delete-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  width: 80px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-edit-btn {
+  background: #ffc107;
+  color: black;
+}
+
+.admin-edit-btn:hover {
+  background: #e0a800;
+}
+
+.admin-delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.admin-delete-btn:hover {
+  background: #c82333;
+}
+
+/* ✅ تحسين التصميم للهاتف المحمول */
+@media (max-width: 600px) {
+  .admin-meal-item {
+    max-width: 250px;
+    height: 260px;
+  }
+
+  .admin-meal-actions {
+    left: 5px;
+  }
+}
+.restaurant-info-container {
+  background: #f8f9fa;
+  padding: 20px;
+  border-top: 2px solid #ddd;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.restaurant-info-container h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.restaurant-info-container p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.restaurant-info-container a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.restaurant-info-container a:hover {
+  text-decoration: underline;
+}
