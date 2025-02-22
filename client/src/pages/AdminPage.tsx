@@ -48,30 +48,35 @@ const AdminPage: React.FC = () => {
         try {
             let response;
             if (editingMeal) {
-                response = await axios.put(`http://localhost:5000/meals/${editingMeal.list}/${editingMeal.id}`, { name, price });
+                response = await axios.put(
+                    `http://localhost:5000/meals/${editingMeal.list}/${editingMeal.id}`,
+                    { name, price }
+                );
                 setEditingMeal(null);
             } else {
                 response = await axios.post(`http://localhost:5000/upload/${list}`, formData, {
                     headers: { "Content-Type": "multipart/form-data" },
                 });
             }
-
+        
+            console.log("Server response:", response.data); // ✅ استخدام المتغير لتجنب الخطأ
+        
             alert(editingMeal ? "Meal updated successfully!" : "Meal added successfully!");
-
+        
             setName("");
             setPrice("");
             setImage(null);
             (document.getElementById("fileInput") as HTMLInputElement).value = "";
-
+        
             const updatedMeals = await axios.get(`http://localhost:5000/meals/${list}`);
-            setMeals(prev => ({ ...prev, [list]: updatedMeals.data }));
+            setMeals((prev) => ({ ...prev, [list]: updatedMeals.data }));
         } catch (error) {
             console.error("Error:", error);
             alert("Operation failed!");
         } finally {
             setLoading(false);
         }
-    };
+    };        
 
     const handleDelete = async (list: string, id: string) => {
         if (!window.confirm("Are you sure you want to delete this meal?")) return;
